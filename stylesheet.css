@@ -1,0 +1,221 @@
+@charset "utf-8";
+@import "reset.css";
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+input, select, option {
+font-family: 'Signika', sans-serif;  }
+
+h1,h2,h3,h4,h5{
+font-weight:normal; }
+
+body { 
+font-family: 'Signika', sans-serif; 
+font-size:1em; 
+color:#575757; 
+line-height:21px; 
+margin:0px; 
+padding:0px; }
+
+#wrapper
+{
+	width: 100%;
+	
+}
+#header
+{
+	width: 1000px;
+	height: 150px;
+	margin: 0 auto;
+}
+#header .logo
+{
+	padding: 10px;
+	float: left;
+}
+.search
+{
+	float: right;
+	margin-top: 30px;
+	position: relative;
+}
+.search input[type="text"]
+{
+	border-radius: 5px;
+	width: 180px;
+	border: 1px solid red;
+	padding: 5px 5px 5px 10px;
+}
+.searchicon
+{
+	background: url(images/icons.png);
+	background-position-y:395px; 
+	width: 30px;
+	height: 30px;
+	border: 0px solid;
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+}
+.call
+{
+	background:url(images/icons.png)no-repeat 0 -6px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 45px;
+	font-size: 10px;
+	padding-left: 35px;
+}
+.call span
+{
+	font-size: 18px;
+}
+#nav
+{
+	width: 100%;
+	background-color: #2772F2;
+	height: 40px;
+}
+#nav .mainNavMenu
+{
+	width: 1000px;
+	position: relative;
+	
+	margin: 0 auto;
+	line-height: 40px;
+}
+#nav .mainNavMenu ul
+{
+	float: left;
+	line-height: 40px;
+	list-style: none;
+}
+#nav .mainNavMenu li
+{
+	display: inline-block;
+	line-height: 40px;
+	float: left;
+	margin-right: 30px;
+}
+.mainNavMenu li a
+{
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+}
+.submenu
+{
+	width: 250px;
+	position: absolute;
+	background:url(images/icons.png)no-repeat 10px -410px;
+	font-size: 13px;
+	padding-top: 10px;
+	top: 30px;
+	display: none;
+
+}
+ .submenu ul
+{
+	border-top: 5px solid #1223FE;
+	
+	background-color: aliceblue;
+	
+}
+.submenu li a
+{
+	color: #920002;
+	text-decoration: none;
+}
+.submenu ul li
+
+{
+	border-bottom: 1px solid #064504;
+	width: 100%;
+}
+.mainNavMenu li:hover .submenu
+{
+	display: block;
+}
+.submenu li a:hover
+{
+	color: blue;
+}
+#banner
+{
+	width: 100%;
+	position: relative;
+
+}
+.bg
+{
+	width: 100%;
+
+}
+#bookingSection
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+#bookingwidget
+{
+	
+	margin: 0 auto;
+	width: 1000px;
+}
+#bookingform
+{
+	border: 7px solid black;
+	padding: 15px;
+	overflow:hidden; 
+	background-color:aliceblue;
+}
+.widgetelement lable
+{
+	font-size: 15px;
+	display: block;
+}
+.widgetelement select
+{
+	width: 150px;
+	border-radius: 5px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+	background: url(images/icons.png)no-repeat right -432px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+#bookingform .widgetelement 
+{
+	float: left;
+	margin-right: 10px;
+}
+#bookingwidget span
+{
+	background-color: #000000;
+	color: aliceblue;
+	padding: 5px;
+	border-radius: 5px;
+	
+}
+#bookingwidget .smallSelect
+{
+	width: 100px;
+}
+.redbutton
+{
+	background-color: red;
+	padding: 5px;
+	margin-top: 30px;
+	border-radius: 2px;
+	border: 0px solid;
+	  animation-name: example;
+  animation-duration:;
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
